@@ -1,3 +1,16 @@
+var choices = ["rock" , "paper" , "scissors"];
+var index = Math.floor(Math.random()*choices.length);
+var computerChoice = choices[index];
+console.log(computerChoice);
+
+var userChoice;
+
+if (userChoice == computerChoice);
+        alert("Tie");
+}
+     
+   
+     
 //Class 1:
         // Fork and clone the repo and set up your project workspace and link files
         // Write HTML for your project
