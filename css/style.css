@@ -4,3 +4,26 @@ body{
     font-family: 'Press Start 2P', cursive;
 }
 
+.buttonCaption { 
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+/*.userStatus {*/
+/*    bottom: 0;*/
+/*    right: 900;*/
+/*    width: 300px;*/
+/*    border: 3px solid;*/
+/*}*/
+/*.computerStatus {*/
+/*    bottom: 200;*/
+/*    right:900;*/
+/*    width: 300px;*/
+/*    border: 3px solid;*/
+/*}*/
+/*.winner {*/
+/*    bottom: 0;*/
+/*    right:500;*/
+/*    width: 300px;*/
+/*    border: 3px solid;*/
+/*}*/

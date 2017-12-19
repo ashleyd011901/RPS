@@ -1,13 +1,57 @@
 var choices = ["rock" , "paper" , "scissors"];
-var index = Math.floor(Math.random()*choices.length);
-var computerChoice = choices[index];
-console.log(computerChoice);
+/*global $*/
 
-var userChoice;
+// this happens when the script loads.  Page loads
+console.log("Loaded");
 
-if (userChoice == computerChoice);
-        alert("Tie");
+$(document).ready(function() {
+    // this happens when jquery loads
+
+    console.log("Works");
+    
+    $("#blueButtonRock").click(function() {
+        // this happens when I click rock
+        alert("Rock");
+        runRPS("rock");
+    });
+    
+    $("#yellowButtonScissor").click(function() {
+        // this happens when I click scissor
+        alert("Scissors");
+        runRPS("scissors");
+    });
+    
+        $("#greenButtonPaper").click(function() {
+        // this happens when I click paper
+        alert("Paper");
+        runRPS("paper");
+    });
+    
+});
+
+function runRPS(userInput) {
+        $('#userChoice').html(userInput);
+        var index = Math.floor(Math.random()*choices.length);
+        var computerChoice = choices[index];
+        console.log("computerChoice is " + computerChoice);
+        $('#computerChoice').html(computerChoice);
+        var userChoice = userInput;
+        console.log("userChoice is " + userChoice);
+        
+        if (userChoice == computerChoice){
+                console.log("Tie");
+                 $('#winner').html("Tie");
+        } else if ((userChoice == "scissors" && computerChoice == "rock") || 
+                   (userChoice == "rock" && computerChoice == "paper") || 
+                   (userChoice == "paper" && computerChoice == "scissors")) {
+                console.log("Computer Wins");
+        } else {
+                console.log("User Wins");
+        }
 }
+
+
+
      
    
      
