@@ -11,26 +11,23 @@ $(document).ready(function() {
     
     $("#blueButtonRock").click(function() {
         // this happens when I click rock
-        alert("Rock");
         runRPS("rock");
     });
     
     $("#yellowButtonScissor").click(function() {
         // this happens when I click scissor
-        alert("Scissors");
         runRPS("scissors");
     });
     
         $("#greenButtonPaper").click(function() {
         // this happens when I click paper
-        alert("Paper");
         runRPS("paper");
     });
     
 });
 
 function runRPS(userInput) {
-        $('#userChoice').html(userInput);
+        $('#userChoice').html(userInput); // div hold user choice only on ui
         var index = Math.floor(Math.random()*choices.length);
         var computerChoice = choices[index];
         console.log("computerChoice is " + computerChoice);
@@ -41,20 +38,17 @@ function runRPS(userInput) {
         if (userChoice == computerChoice){
                 console.log("Tie");
                  $('#winner').html("Tie");
-        } else if ((userChoice == "scissors" && computerChoice == "rock") || 
-                   (userChoice == "rock" && computerChoice == "paper") || 
+        } else if ((userChoice == "scissors" && computerChoice == "rock") || // && (and) = both statements have to be true
+                   (userChoice == "rock" && computerChoice == "paper") || // || (or) = one has to be false to be false entirely
                    (userChoice == "paper" && computerChoice == "scissors")) {
                 console.log("Computer Wins");
+                $('#winner').html("Computer Wins!!");
         } else {
-                console.log("User Wins");
+                console.log("User Wins!!");
+                $('#winner').html("User Wins!!");
         }
 }
 
-
-
-     
-   
-     
 //Class 1:
         // Fork and clone the repo and set up your project workspace and link files
         // Write HTML for your project

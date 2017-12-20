@@ -1,21 +1,36 @@
-
-
-body{ 
-    font-family: 'Press Start 2P', cursive;
-}
-
 .buttonCaption { 
     font-family: 'Press Start 2P', cursive;
+     color: white;
+
+}
+
+.resultsBox { /* div holding images and their captions (taller than images) */
+    height: 150px;
+}
+
+h3 {
+    text-align: center;
 }
 
 
-/*.userStatus {*/
+
+
+
+
+
+
+
+
+
+
+
+/*.userChoice {*/
 /*    bottom: 0;*/
 /*    right: 900;*/
 /*    width: 300px;*/
 /*    border: 3px solid;*/
 /*}*/
-/*.computerStatus {*/
+/*.computerChoice {*/
 /*    bottom: 200;*/
 /*    right:900;*/
 /*    width: 300px;*/

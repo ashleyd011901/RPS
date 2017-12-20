@@ -4,14 +4,13 @@
   <head>
       <title>RPS Game</title>
         <!-- Link CSS here -->
-        <link href="css/style.css" rel="stylesheet"> 
+        
         <!-- Link JQuery here -->
           <script src="https://code.jquery.com/jquery-3.1.1.js"
       integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
       crossorigin="anonymous"></script> 
         <!-- Link Javascript File here -->
           <script src="js/script.js"></script>
-          
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
         <!-- Latest compiled and minified Bootstrap CSS -->
@@ -21,70 +20,76 @@
          
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
+        <link href="css/style.css" rel="stylesheet"> 
+        <style>
+          body {
+            background-color: black;
+          }
+        </style>  
       
   </head>
 
   <body>
-    
-    <!-- TASK 1: In the div below. 
-        1. In a header tag, add a title.
-        2. In a paragraph tag, add instructions on how to play the game.
-        3. Add a RPS image.
-        4. Add input box and button .
-        5. Add divs to record User Choice and Computer Choice.
-        6. Add a div to record the Winner.
-    -->
-      <!--<input id="input">-->
-      <!--<button id="rock">Rock</button>-->
-      <!--<button id="paper">Paper</button>-->
-      <!--<button id="scissors">Scissors</button>-->
-      
-     
-      
-      
-      
+
     <div class="container">
       <div class="row">
+        <div class="col-md-12 col-sm-4">
+          <footer class="caption buttonCaption" style="text-align:center"><h3>Rock Paper Scissors</h3></footer>
+        </div>
+      </div>
+<!-- First row containing two buttons -->
+      <div class="row">
         <div class="col-md-4 col-sm-4">
-          <div class="caption buttonCaption">
-            <img id="blueButtonRock" src="js/blueButton.png" />
-            rrock
+          <div class="caption buttonCaption"> 
+            <img id="blueButtonRock" src="js/blueButton.png" /> <!-- Blue button -->
+            rock
           </div>
         </div>
         <div class="col-md-4 col-sm-4">
-         
+         <!--And the winner is: (not resultsBox) -->
+         <!--<div id="winner"></div>-->
+            <div class="caption buttonCaption"> 
+              Winner is:
+              <div id="winner"></div>
+            </div>
         </div>
         <div class="col-md-4 col-sm-4">
           <div class="caption buttonCaption">
-            <img id="yellowButtonScissor" src="js/yellowButton.png" />
+            <img id="yellowButtonScissor" src="js/yellowButton.png" /> <!-- Yellow button -->
             scissors
           </div>
         </div>
-    
-    
-        <div class="row">
-          <div class="col-md-4 col-sm-4">
+      </div>
+<!-- Second row containing one button -->
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <div class="caption buttonCaption"> 
+                   <!-- User Picks: -->
+            <div>User picks:</div> 
+            <div id="userChoice"></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="caption buttonCaption">
+            <img id="greenButtonPaper" src="js/greenButton.png" /> <!-- Green button -->
+            paper
+          </div>
+        </div>
           
+        <div class="col-md-4 col-sm-4">
+          <div class="caption buttonCaption"> 
+            <div>Computer picks:</div> 
+            <div id="computerChoice"></div>
           </div>
-          <div class="col-md-4 col-sm-4">
-            <div class="caption buttonCaption">
-              <img id="greenButtonPaper" src="js/greenButton.png" />
-              paper
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4">
-  
-          </div>
-          </div>
+        </div>
+    </div> <!-- End container -->
     
-some bottostrap layout... User Picks: <div id="userChoice"></div>
+<!--some bottostrap layout... User Picks: <div id="userChoice"></div>-->
       
-     computer picks: <div id="computerChoice"></div>
+<!--     computer picks: <div id="computerChoice"></div>-->
      
-     ANd the winner is: <div id="winner"></div>
+<!--     And the winner is: <div id="winner"></div>-->
      
 
   </body>
